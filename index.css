@@ -1,3 +1,39 @@
 .main {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 200px 40px;
+}
 
+.header {
+  grid-column: 1 / -1;
+  background-color: 172451;
+}
+
+.menu {
+  grid-row: 2 / 3;
+  background-color: #4dc9ea;
+}
+
+.content {
+  grid-column: 2 / -1;
+  background-color: #23499e;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  background-color: #172451;
+}
+
+.main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+html, body {
+  background-color: #a3a6af;
+  margin: 10px;
 }
