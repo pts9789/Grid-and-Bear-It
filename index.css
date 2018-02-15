@@ -1,27 +1,32 @@
 .main {
+  height: 100%;
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 40px 200px 40px;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "m h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
 }
 
 .header {
-  grid-column: 1 / -1;
+  grid-area: h;
   background-color: 172451;
 }
 
 .menu {
-  grid-row: 2 / 3;
+  grid-area: m;
   background-color: #4dc9ea;
 }
 
 .content {
-  grid-column: 2 / -1;
+  grid-area: c;
   background-color: #23499e;
 }
 
 .footer {
-  grid-column: 1 / -1;
+  grid-area: f;
   background-color: #172451;
 }
 
@@ -29,11 +34,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
+    font-family: sans-serif;
     color: white;
 }
 
 html, body {
-  background-color: #a3a6af;
   margin: 10px;
+  background-color: #a3a6af;
+
 }
