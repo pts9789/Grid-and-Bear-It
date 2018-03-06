@@ -22,7 +22,43 @@
 
 .content {
   grid-area: c;
-  background-color: #23499e;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 75px;
+  grid-auto-flow: dense;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.content > div > img {
+    width: 100%;
+    height: 1fr;
+    object-fit: cover;
+}
+
+.bears {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.wide-bears {
+    grid-column: span 2;
+}
+
+.tall-bears {
+    grid-row: span 2;
+}
+
+.big-bears {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .footer {
