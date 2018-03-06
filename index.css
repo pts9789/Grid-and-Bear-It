@@ -1,3 +1,4 @@
+
 .main {
   height: 100%;
   display: grid;
@@ -8,11 +9,12 @@
     "m h h h h h h h h h h h"
     "m c c c c c c c c c c c"
     "f f f f f f f f f f f f";
+
 }
 
 .header {
   grid-area: h;
-  background-color: #172451;
+  background-color: #0d499f;
 }
 
 .menu {
@@ -71,11 +73,10 @@
     font-size: 35px;
     font-family: sans-serif;
     color: white;
-    padding: 5px;
 }
 
 html, body {
-  margin: 10px;
+  margin: 2px;
   background-color: #a3a6af;
 
 }
