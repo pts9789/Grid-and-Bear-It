@@ -4,7 +4,7 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 80px auto 80px;
   grid-template-areas:
     "m h h h h h h h h h h h"
     "m c c c c c c c c c c c"
@@ -14,12 +14,12 @@
 
 .header {
   grid-area: h;
-  background-color: #0d499f;
+  background-color: #4dc9ea;
 }
 
 .menu {
   grid-area: m;
-  background-color: #4dc9ea;
+  background-color: #0d499f;
 }
 
 .content {
@@ -80,7 +80,26 @@
 }
 
 html, body {
-  margin: 2px;
+  margin: 8px 5px;
   background-color: #a3a6af;
 
+}
+
+.gabi-big{
+  display: flex;
+  justify-content: center;
+}
+
+.gabi-small{
+  display: none;
+}
+
+@media screen and (max-width: 705px) {
+  .gabi-big{
+    display: none
+  }
+  .gabi-small{
+    display: flex;
+    justify-content: center;
+  }
 }
