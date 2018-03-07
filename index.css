@@ -52,6 +52,10 @@
     grid-column: span 2;
 }
 
+.wider-bears {
+      grid-column: span 3;
+}
+
 .tall-bears {
     grid-row: span 2;
 }
