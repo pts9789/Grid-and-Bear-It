@@ -19,7 +19,12 @@
 
 .menu {
   grid-area: m;
+  flex-direction: column;
   background-color: #0d499f;
+}
+
+.side-bar{
+  padding: 20px 10px;
 }
 
 .content {
@@ -81,7 +86,7 @@
 
 html, body {
   margin: 8px 5px;
-  background-color: #a3a6af;
+  background-color: #f5f5f5;
 
 }
 
@@ -94,8 +99,28 @@ html, body {
   display: none;
 }
 
-@media screen and (max-width: 705px) {
+.gabi-med{
+  display: none
+}
+
+@media screen and (max-width: 775px) {
   .gabi-big{
+    display: none
+  }
+  .gabi-med{
+    display: flex;
+    justify-content: center;
+  }
+  .gabi-small{
+    display: none
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gabi-big{
+    display: none
+  }
+  .gabi-med{
     display: none
   }
   .gabi-small{
