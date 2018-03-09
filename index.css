@@ -45,8 +45,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    color: #ffeead;
 }
 
 .images > div > img {
@@ -60,16 +58,16 @@
 }
 
 .wider-bears {
-      grid-column: span 3;
+  grid-column: span 3;
 }
 
 .tall-bears {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 
 .big-bears {
-    grid-column: span 2;
-    grid-row: span 2;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .footer {
@@ -79,11 +77,8 @@
 }
 
 .main > div {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    font-family: sans-serif;
-    color: white;
+  display: flex;
+  align-items: center;
 }
 
 html, body {
