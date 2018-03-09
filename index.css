@@ -15,11 +15,13 @@
 .header {
   grid-area: h;
   background-color: #4dc9ea;
+  justify-content: center;
 }
 
 .menu {
   grid-area: m;
   flex-direction: column;
+  justify-content: space-evenly;
   background-color: #0d499f;
 }
 
@@ -73,11 +75,11 @@
 .footer {
   grid-area: f;
   background-color: #172451;
+  justify-content: space-evenly;
 }
 
 .main > div {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 35px;
     font-family: sans-serif;
